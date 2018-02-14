@@ -1,0 +1,22 @@
+body {
+	background-color: black;
+}
+
+.main {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+	padding: 10px;
+}
+
+.event {
+	border: solid grey 1px;
+    border-radius: 2px;
+    background-color: #4f4f4a;
+    padding: 5px;
+}
+
+h1 {
+	color: #4f4f4a;
+	padding: 10px;
+}
