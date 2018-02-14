@@ -1,5 +1,5 @@
 from bottle import route, run, template, static_file, error
-import requests #, os
+import requests, os
 
 response = requests.get('http://apis.is/concerts')
 
@@ -13,4 +13,4 @@ def index():
 def server_static(filename):
     return static_file(filename, root='./css')
 
-run()
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
